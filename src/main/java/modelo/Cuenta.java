@@ -5,7 +5,7 @@ public class Cuenta {
     private String periodo;
     private String valores;
 
- 
+
     //Getters y Setters
     public String getNombre() {
         return nombre;
