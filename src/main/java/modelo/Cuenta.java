@@ -1,33 +1,41 @@
 package modelo;
 
+import java.math.BigDecimal;
+
+import org.uqbar.commons.utils.Observable;
+
+@Observable
 public class Cuenta {
-    private String nombre;
+    private String empresa;
+    private String cuenta;
     private String periodo;
-    private String valores;
+    private BigDecimal monto;
 
+    public String getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
 
-    //Getters y Setters
-    public String getNombre() {
-        return nombre;
-    }
+	public String getCuenta() {
+		return cuenta;
+	}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+	public void setCuenta(String cuenta) {
+		this.cuenta = cuenta;
+	}
 
-    public String getPeriodo() {
-        return periodo;
-    }
-
-    public void setPeriodo(String periodo) {
-        this.periodo = periodo;
-    }
-
-    public String getValores() {
-        return valores;
-    }
-
-    public void setValores(String valores) {
-        this.valores = valores;
-    }
+	public String getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
+	}
+	public BigDecimal getMonto() {
+		return monto;
+	}
+	public void setMonto(BigDecimal monto) {
+		this.monto = monto;
+	}
 }
